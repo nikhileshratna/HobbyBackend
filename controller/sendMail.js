@@ -6,7 +6,7 @@ exports.sendMail = async (req, res) => {
         const userData = req.body;
         console.log(userData);
         const info = mailSender(
-            "ratnanikhilesh@gmail.com",
+            "info@redpositive.in",
             "Here Your Hobbies",
              `${userData.map((user)=>user.hobbies)}`
         );
